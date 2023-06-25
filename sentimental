@@ -1,0 +1,13 @@
+# Example using the NLTK library for sentiment analysis
+import nltk
+from nltk.sentiment import SentimentIntensityAnalyzer
+
+# Initialize the sentiment intensity analyzer
+sia = SentimentIntensityAnalyzer()
+
+# Analyze the sentiment of a text
+text = "This movie is amazing!"
+sentiment = sia.polarity_scores(text)
+
+# Print the sentiment scores
+print("Sentiment:", sentiment)
